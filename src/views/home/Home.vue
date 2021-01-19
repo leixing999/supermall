@@ -1,30 +1,26 @@
 <template>
-  <div>
-    <h2>Home</h2>
-    <h1>{{count}}</h1>
-    <button @click="add">add</button>
-     <button @click="sub">sub</button>
+  <div id="home">
+    <div class="home-nav">
+      <nav-bar>
+       <div slot="center" backgroudcolor="blue">购物街</div>
+      </nav-bar>
+    </div>
+    
   </div>
 </template>
 
 <script>
+import NavBar from 'components/common/navbar/NavBar'
+
 export default {
   name: 'Home',
-  methods: {
-    add() {
-      this.$store.commit('increment')
-    },
-    sub() {
-      this.$store.commit('decrement')
-    },
-  },
-  computed: {
-    count() {
-      return this.$store.state.counter
-    },
-  },
+  components: { NavBar },
 }
 </script>
 
 <style>
+.home-nav {
+  background-color: rgb(148, 29, 128);
+  color: white;
+}
 </style>
