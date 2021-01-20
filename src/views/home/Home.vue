@@ -5,7 +5,7 @@
        <div slot="center" backgroudcolor="blue">购物街</div>
       </nav-bar>
        <div>
-         <swiper :swiperData="banners"></swiper>
+         <home-swiper :swiperData="banners"></home-swiper>
        </div>
     </div>
     
@@ -14,11 +14,11 @@
 
 <script>
 import NavBar from 'components/common/navbar/NavBar'
-import Swiper from 'components/common/swiper/Swiper'
+import HomeSwiper from './homeComponents/HomeSwiper'
 import { getHomeMultidata } from 'network/home'
 export default {
   name: 'Home',
-  components: { NavBar, Swiper },
+  components: { NavBar, HomeSwiper },
   data() {
     return {
       banners: [],
