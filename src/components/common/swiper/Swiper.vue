@@ -12,7 +12,7 @@
     </div>
 
     <div class="numBox">
-      <div class="nums" v-for="(item,index) in swiperData" :key="index" @click="btnClick(index)">
+      <div class="nums" v-for="(item,index) in swiperData" :key="index" @click="btnClick(index)" :style="{background: index===currentIndex ?  ' rgba(0, 255, 106, 0.767)':'blue'}">
         {{index+1}}
       </div>
      
@@ -95,29 +95,21 @@ li {
 
 .numBox {
   display: flex;
+  border-radius: 18px;
   height: 20px;
   margin-top: -10px;
-  margin-left: 65%;
+  margin-left: 50%;
   position: fixed; /*让数字框浮动在图片层上*/
   text-align: center;
   color: white;
 }
 .nums {
-  flex: 1;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 18px;
   margin-right: 20px;
-  background: rgba(0, 255, 179, 0.4);
+  text-align: center;
+  vertical-align: middle;
 }
-/* .numSpan {
-  color: white;
-  font-size: 30px;
-  margin-top: 20px;
-  line-height: 60px;
-} */
-/*
-.numSpan {
-  color: white;
-  font-size: 30px;
-  margin-top: 20px;
-  line-height: 60px;
-} */
 </style>
