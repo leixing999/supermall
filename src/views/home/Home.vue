@@ -15,20 +15,24 @@
     <div>
       <home-feature-view></home-feature-view>
     </div>
+    
 
     
   </div>
 </template>
 
 <script>
-import NavBar from 'components/common/navbar/NavBar'
+/********home子组件加载************ */
 import HomeSwiper from './homeComponents/HomeSwiper'
 import RecommendView from './homeComponents/RecommendView'
 import HomeFeatureView from './homeComponents/HomeFeatureView'
+/*********home用到的公共组件******** */
+import NavBar from 'components/common/navbar/NavBar'
+/*********home组件调用方法接口*********** */
 import { getHomeMultidata } from 'network/home'
 export default {
   name: 'Home',
-  components: { NavBar, HomeSwiper, RecommendView, HomeFeatureView },
+  components: { HomeSwiper, RecommendView, HomeFeatureView, NavBar },
   data() {
     return {
       banners: [],
