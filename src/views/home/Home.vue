@@ -4,17 +4,18 @@
       <nav-bar>
        <div slot="center" backgroudcolor="blue">购物街</div>
       </nav-bar>
-       <div>
-         <home-swiper :swiperData="banners"></home-swiper>
-       </div>
-       <div>
-         <recommend-view :recommends="recommends"></recommend-view>
-       </div>
-       <div>
-         <home-feature-view></home-feature-view>
-       </div>
-
+     
     </div>
+    <div>
+      <home-swiper :swiperData="banners"></home-swiper>
+    </div>
+    <div>
+      <recommend-view :recommends="recommends"></recommend-view>
+    </div>
+    <div>
+      <home-feature-view></home-feature-view>
+    </div>
+
     
   </div>
 </template>
@@ -44,8 +45,16 @@ export default {
 </script>
 
 <style>
+#home {
+  padding-top: 44px;
+}
 .home-nav {
   background-color: rgb(148, 29, 128);
   color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9;
 }
 </style>
