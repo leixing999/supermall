@@ -10,6 +10,10 @@
        <div>
          <recommend-view :recommends="recommends"></recommend-view>
        </div>
+       <div>
+         <home-feature-view></home-feature-view>
+       </div>
+
     </div>
     
   </div>
@@ -19,10 +23,11 @@
 import NavBar from 'components/common/navbar/NavBar'
 import HomeSwiper from './homeComponents/HomeSwiper'
 import RecommendView from './homeComponents/RecommendView'
+import HomeFeatureView from './homeComponents/HomeFeatureView'
 import { getHomeMultidata } from 'network/home'
 export default {
   name: 'Home',
-  components: { NavBar, HomeSwiper, RecommendView },
+  components: { NavBar, HomeSwiper, RecommendView, HomeFeatureView },
   data() {
     return {
       banners: [],
