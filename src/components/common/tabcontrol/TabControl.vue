@@ -45,8 +45,6 @@ export default {
   margin-top: 15px;
   margin-bottom: 10px;
 }
-.tabcontrol-item span {
-}
 
 .active {
   color: red;
