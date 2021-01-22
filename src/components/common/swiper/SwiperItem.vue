@@ -27,7 +27,7 @@ export default {
   height: 20px;
   margin-top: -10px;
   margin-left: 50%;
-  position: fixed; /*让数字框浮动在图片层上*/
+  position: absolute; /*让数字框浮动在图片层上*/
   text-align: center;
   color: white;
 }
