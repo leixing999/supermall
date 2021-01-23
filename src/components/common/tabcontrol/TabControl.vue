@@ -33,7 +33,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .tabcontrol {
   display: flex;
   text-align: center;

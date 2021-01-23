@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .imgBox {
   height: 150px;
   margin: 1px auto;

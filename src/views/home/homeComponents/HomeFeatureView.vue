@@ -12,7 +12,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .homeFeature {
   border-bottom: 8px solid #eee;
   background-color: white;

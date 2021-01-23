@@ -18,8 +18,9 @@ export default {
   mounted() {
     this.scroll = new BScroll(this.$refs.wrapper, {
       click: true,
-      tap: true,
-      wheel: true,
+      probeType: 2,
+    }).on('scroll', (options) => {
+      console.log(options)
     })
   },
 }
